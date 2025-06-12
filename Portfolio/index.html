@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rangeshpandian PT | Portfolio</title>
+  <meta name="description" content="Portfolio of Rangeshpandian PT - Web Developer & Data Scientist">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --bg1: #f0f8ff;
+      --bg2: #fff0f5;
+      --bg3: #f5f5dc;
+      --bg4: #e6ffe6;
+      --bg-footer: #ddd;
+      --text-color: #111;
+      --card-bg: #fff;
+    }
+    [data-theme="dark"] {
+      --primary: #66b2ff;
+      --bg1: #1a1a1a;
+      --bg2: #2c2c2c;
+      --bg3: #333;
+      --bg4: #3d3d3d;
+      --bg-footer: #1f1f1f;
+      --text-color: #f0f0f0;
+      --card-bg: #2a2a2a;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      color: var(--text-color);
+      background: var(--bg1);
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--bg1);
+      padding: 10px 20px;
+      z-index: 999;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .toggle-theme {
+      cursor: pointer;
+      background: none;
+      border: 1px solid var(--primary);
+      padding: 6px 10px;
+      border-radius: 10px;
+      color: var(--primary);
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: var(--primary);
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .scrolling-text {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: scroll-left 20s linear infinite;
+      font-size: 1.1rem;
+      padding: 20px 0;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+    .center-btns {
+      text-align: center;
+    }
+    .about { background-color: var(--bg1); text-align: center; }
+    .skills { background-color: var(--bg2); }
+    .projects { background-color: var(--bg3); }
+    .contact { background-color: var(--bg4); }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--bg-footer);
+      font-size: 0.9rem;
+    }
+    img.profile {
+      max-width: 160px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '🔹 ';
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .project-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      nav a { margin-right: 10px; font-size: 14px; }
+      .btn { padding: 10px 20px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle-theme" onclick="toggleTheme()">🌓 Theme</button>
+  </header>
+
+  <section class="about" id="about">
+    <img src="profile.jpg" alt="Profile Picture" class="profile">
+    <h2>👨‍💻 About Me</h2>
+    <div class="scrolling-text">
+      🎓 Computer Science Student | Web Development & Data Science Enthusiast — I’m currently pursuing my B.Tech in Computer Science and Engineering at SRM Institute of Science and Technology. With a passion for building impactful digital experiences and solving real-world problems through data, I focus on mastering Web Development and Data Science.
+    </div>
+    <div class="center-btns">
+      <button class="btn" onclick="window.open('https://drive.google.com/file/d/1kXea2t_2F6xedsLh0hKUDmsGnY7qqNne/view')">📄 Resume</button>
+      <button class="btn" onclick="window.open('https://drive.google.com/drive/folders/1uHRCCEszTCLOM-oEckfVU2I0WvWKriob')">📜 Certificates</button>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, React.js</li>
+      <li>Python, Java</li>
+      <li>Node.js, MongoDB</li>
+      <li>Data Analysis, Pandas, NumPy, Matplotlib</li>
+    </ul>
+  </section>
+
+  <section class="skills" id="experience">
+    <h2>💼 Experience</h2>
+    <div class="project-card">
+      <p><strong>🖥️ Frontend Developer at CodeAlpha</strong></p>
+      <p>Designed and developed responsive user interfaces using HTML, CSS, and JavaScript. 🧠 Focused on performance, accessibility, and user-centered design to build mini web applications like calculators and landing pages.</p>
+    </div>
+    <div class="project-card">
+      <p><strong>🌐 Full-stack Developer at Future Inters</strong></p>
+      <p>Built a mini e-commerce platform integrating frontend (HTML, CSS, JS) and backend logic 💾 using Node.js. Managed product listings, dynamic UI updates, and basic CRUD operations with MongoDB.</p>
+    </div>
+    <div class="project-card">
+      <p><strong>🌍 Web Developer at Codsoft</strong></p>
+      <p>Created elegant and user-friendly websites 🧩 focusing on layout structure, animations, and responsiveness. Collaborated in code review and debugging sessions to maintain project quality.</p>
+    </div>
+    <div class="project-card">
+      <p><strong>✍️ Content Writer at Kshitiksha Foundation</strong></p>
+      <p>Crafted compelling articles and project reports 📄 related to technology, social issues, and youth empowerment. Worked closely with the editorial team to deliver high-quality content on time.</p>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>📂 Projects</h2>
+    <div class="project-card">
+      <p><strong>🧮 Calculator Web App:</strong> A responsive calculator built using HTML, CSS, and JavaScript. Includes basic arithmetic operations and memory functions.</p>
+      <a href="https://github.com/RangeshPandianPT/CodeAlpha_Calculator.git" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <p><strong>🛒 Mini E-Commerce Website:</strong> Built a simple e-commerce platform with product listings, cart functionality, and dynamic content using HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/RangeshPandianPT/FUTURE_FS_02.git" target="_blank">🔗 GitHub Repository</a>
+    </div>
+    <div class="project-card">
+      <p><strong>🧭 Landing Website:</strong> A stylish landing page created using HTML, CSS, and a touch of animation. Focused on design, responsiveness, and clean layout.</p>
+      <a href="https://github.com/RangeshPandianPT/CODSOFT_Landing-Page.git" target="_blank">🔗 GitHub Repository</a>
+    </div>
+    <div class="project-card">
+      <p><strong>🎵 Music Player App:</strong> A simple front-end music player using HTML, CSS, and JavaScript. Allows play, pause, and navigation between tracks.</p>
+      <a href="https://github.com/RangeshPandianPT/CodeAlpha_Music-Player.git" target="_blank">🔗 GitHub Repository</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:rangeshpandian@gmail.com">rangeshpandian@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/_rangesh_07">@_rangesh_07</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rangeshpandian-pt-428b04325">View Profile</a></p>
+    <h3>Or send a message:</h3>
+    <form action="mailto:rangeshpandian@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>Made with ❤ by Rangeshpandian PT · © 2025</footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    }
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
