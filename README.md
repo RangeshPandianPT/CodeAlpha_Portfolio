@@ -30,6 +30,13 @@ This is a responsive and elegant **Portfolio Website** built using **HTML, CSS, 
 ## 📸 Preview
 
 Include screenshots or a demo link here if hosted online.
+![Image](https://github.com/user-attachments/assets/9f1a2769-f9e9-4ea5-97d1-c3f7fbc1b30f)
+
+![Image](https://github.com/user-attachments/assets/5a2456e9-e35f-415d-83f1-51707f477419)
+
+![Image](https://github.com/user-attachments/assets/154813c5-adc3-4a34-bd78-c500b3944e51)
+
+---
 
 ## 📂 Folder Structure
 
